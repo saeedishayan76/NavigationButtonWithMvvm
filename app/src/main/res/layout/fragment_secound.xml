@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="Data"
+            type="com.example.navigationtestmvvm.viewModel.FragmentsViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SecoundFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Here is Secound Fragment"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+            app:image="@{Data.image}"
+            android:id="@+id/imgSecoundragment"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</layout>
