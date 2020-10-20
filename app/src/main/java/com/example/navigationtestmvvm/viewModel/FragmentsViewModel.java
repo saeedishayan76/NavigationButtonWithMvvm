@@ -18,9 +18,7 @@ public class FragmentsViewModel extends ViewModel {
         imgEncodeData.setValue(imageBitmap);
     }
 
-    public MutableLiveData<Bitmap> getImgEncodeData() {
-        return imgEncodeData;
-    }
+    
     public Bitmap getImage()
     {
         return imgEncodeData.getValue();
