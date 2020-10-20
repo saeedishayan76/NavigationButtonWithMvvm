@@ -18,7 +18,7 @@ public class FragmentsViewModel extends ViewModel {
         imgEncodeData.setValue(imageBitmap);
     }
 
-    
+
     public Bitmap getImage()
     {
         return imgEncodeData.getValue();
